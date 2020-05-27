@@ -936,7 +936,7 @@
           .then(function (result) {
             if (result[0]) {
               localStorage.setItem("address", account);
-              location.href = "http://localhost:4200/app/backoffice";
+              location.href = "https://1dapp.github.io/oneid-dashboard";
             } else {
               $(".error").html("You need to register first");
               $(".error").show();
@@ -959,7 +959,7 @@
           if (result1.status == "0x1") {
             alert("success");
             localStorage.setItem("address", account);
-            location.href = "http://localhost:4200/app/backoffice";
+            location.href = "https://1dapp.github.io/oneid-dashboard";
           } else {
             $(".error").html("Transaction Failed");
             $(".error").show();
@@ -1015,7 +1015,7 @@
           if (receipt.status) {
             alert("success");
             localStorage.setItem("address", account);
-            location.href = "http://localhost:4200/app/backoffice";
+            location.href = "https://1dapp.github.io/oneid-dashboard";
           } else {
             $(".error").html("Transaction Failed");
             $(".error").show();
@@ -1034,7 +1034,7 @@
             .then(function (result) {
               if (result[0]) {
                 localStorage.setItem("address", add);
-                location.href = "http://localhost:4200/app/backoffice";
+                location.href = "https://1dapp.github.io/oneid-dashboard";
               } else {
                 $(".error").html("You need to register first");
                 $(".error").show();
