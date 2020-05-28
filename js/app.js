@@ -968,7 +968,7 @@
       });
     }
 
-    $("#lgmbtnsup").click(async () => {
+    $(".lgmbtnsup").click(async () => {
       var add =  ($('[name="referral"]').val())? $('[name="referral"]').val() : 1 ;
       if (add.length == 0) {
         $(".error").html("Enter referral code");
