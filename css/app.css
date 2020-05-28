@@ -8778,3 +8778,218 @@ body.boxed-layout.zig-zag-wool {
                     padding-top: 0;
                     padding-bottom: 0;
                 }
+
+                .section-dark-bg {
+                  position: relative;
+              }
+              .user-land-investments {
+                background-image-no: radial-gradient(circle 499px at center, #f0f3f4 0%, #f0f3f4 100%);
+                background: #ffffff;
+                background: #333333;
+                background-image: radial-gradient(circle 499px at center, #444444 0%, #333333 100%);
+            }
+            .cryp-section {
+              padding: 64px 0 64px;
+              overflow: hidden;
+          }
+          .section-dark-bg:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: url(/logo/dark_bg.svg) center center no-repeat;
+            background-size: cover;
+        }
+        .tab-pane.active {
+          display: block;
+      }
+ 
+      .career-item {
+        box-shadow-no: 0 15px 34px rgba(87, 113, 134, 0.34);
+        border-radius: 4px;
+        background: rgba(242, 244, 255, 0.14);
+        margin-bottom: 12px;
+        padding: 38px 0 23px;
+        transition: 0.3s ease all;
+        -webkit-font-smoothing: antialiased;
+    }
+
+  @media (max-width: 1000px){
+.career-item {
+    position: relative;
+    padding-top: 120px;
+    max-width: 450px;
+    margin: 0 auto 20px;
+}}
+.t-center {
+  text-align: center;
+}
+.career-item__text {
+  color: #888888;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 6px;
+  transition: 0.3s ease color;
+}
+.career-item__text span {
+  color: #f2f4ff;
+  transition: 0.3s ease color;
+}
+.career-item__percent {
+  font-family: "Museo Cyrl";
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  transition: 0.3s ease color;
+  color: #f2f4ff;
+}
+.career-item__text span {
+  color: #f2f4ff;
+  transition: 0.3s ease color;
+}
+.career-item__percent {
+  font-family: "Museo Cyrl";
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  transition: 0.3s ease color;
+  color: #f2f4ff;
+}
+.c-dark_blue {
+  color: #2094fa !important;
+}
+
+.career-item__text span {
+  color: #f2f4ff;
+  transition: 0.3s ease color;
+}
+.c-dark_green {
+  color: #04de71 !important;
+}
+/*	
+	Side Navigation Menu V2, RWD
+	===================
+	License:
+	https://goo.gl/EaUPrt
+	===================
+	Author: @PableraShow
+
+ */
+
+ @charset "UTF-8";
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+ 
+ body {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 300;
+   line-height: 1.42em;
+   color:#A7A1AE;
+   background-color:#1F2739;
+ }
+ 
+ h1 {
+   font-size:3em; 
+   font-weight: 300;
+   line-height:1em;
+   text-align: center;
+   color: #4DC3FA;
+ }
+ 
+ h2 {
+   font-size:1em; 
+   font-weight: 300;
+   text-align: center;
+   display: block;
+   line-height:1em;
+   padding-bottom: 2em;
+   color: #00d4fe;
+ }
+ 
+ h2 a {
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #00d4fe;
+   text-decoration: none;
+ }
+ 
+ .blue { color: #185875; }
+ .yellow { color: #FFF842; }
+ 
+ .container th h1 {
+     font-weight: bold;
+     font-size: 1em;
+   text-align: left;
+   color: #185875;
+ }
+ 
+ .container td {
+     font-weight: normal;
+     font-size: 1em;
+   -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+      -moz-box-shadow: 0 2px 2px -2px #0E1119;
+           box-shadow: 0 2px 2px -2px #0E1119;
+ }
+ 
+ .container {
+     text-align: left;
+     overflow: hidden;
+     width: 100%;
+     margin: 0 auto;
+   display: table;
+
+ }
+ 
+ .container td, .container th {
+     padding-bottom: 2%;
+     padding-top: 2%;
+   padding-left:2%;  
+ }
+ 
+ /* Background-color of the odd rows */
+ .container tr:nth-child(odd) {
+     background-color: #323C50;
+ }
+ 
+ /* Background-color of the even rows */
+ .container tr:nth-child(even) {
+     background-color: #2C3446;
+ }
+ 
+ .container th {
+     background-color: #1F2739;
+ }
+ 
+ .container td:first-child { color: #00d4fe; }
+ 
+ .container tr:hover {
+    background-color: #464A52;
+ -webkit-box-shadow: 0 6px 6px -6px #00d4fe;
+      -moz-box-shadow: 0 6px 6px -6px #00d4fe;
+           box-shadow: 0 6px 6px -6px #00d4fe;
+ }
+ 
+ .container td:hover {
+  background-color: #00d4fe;
+  color: #1e202d;
+  font-weight: bold;
+  box-shadow: #287c7d -1px 1px, #1ad7be -2px 2px, #00d4fe -3px 3px, #0a5db3 -4px 4px, #00d4fe -5px 5px, #1ab2d8 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: line;
+ }
+ 
+ @media (max-width: 800px) {
+ .container td:nth-child(4),
+ .container th:nth-child(4) { display: none; }
+ }
+ td{
+   text-align: center;
+ }
