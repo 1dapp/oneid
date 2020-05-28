@@ -434,7 +434,7 @@
                     console.log(result);
                     if (result[0]) {
                       localStorage.setItem("address", add);
-                    //  location.href = "https://1dapp.github.io/oneid-dashboard";
+                    location.href = "https://1dapp.github.io/oneid-dashboard";
                     } else {
                       $(".error").html("You need to register first");
                       $(".error").show();
