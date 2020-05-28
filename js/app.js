@@ -37,9 +37,6 @@
   }
   backgroundHolder();
 
-
-    
-
   /*----------------------------------
      blog card image height
     -----------------------------------*/
@@ -516,11 +513,11 @@
     console.log(urlParams[1]);
     document.getElementById("referralid").value = referralid ? referralid : "1";
   }, 100);
-  var address = "0x77193cc3832d5c6396d60a73b2d33107dc9ef291";   
-    var myContractInstance;
-    var MyContract
-    var account = ''
-  var abi = [           
+  var address = "0x77193cc3832d5c6396d60a73b2d33107dc9ef291";
+  var myContractInstance;
+  var MyContract;
+  var account = "";
+  var abi = [
     {
       constant: false,
       inputs: [
@@ -895,7 +892,6 @@
   function SigninPage() {
     if (typeof web3 !== "undefined") {
       $("#lgambtn").show();
-
       web3 = new Web3(web3.currentProvider);
 
       web3.eth.getAccounts().then(function (result) {
@@ -915,37 +911,18 @@
       myContractInstance = MyContract;
     }
   }
-    $(document).ready(function () {
-      
-
-        // 
-        $("#blocklogin").click(function () {
-            $('.login-block').show();
-            $('.hero-content').hide();
-        })
-
-        $("#blockreg").click(function () {
-            $('.hero-content').show();
-            $('.login-block').hide();
-        })
-      $("#lgambtn").click(function () {
-      try {
-        myContractInstance.methods
-          .users(account)
-          .call()
-          .then(function (result) {
-            if (result[0]) {
-              localStorage.setItem("address", account);
-              location.href = "https://1dapp.github.io/oneid-dashboard";
-            } else {
-              $(".error").html("You need to register first");
-              $(".error").show();
-            }
-          });
-      } catch (e) {
-        console.log(e);
-      }
+  $(document).ready(function () {
+    //
+    $(".blocklogin").click(function () {
+      $(".login-block").show();
+      $(".hero-content").hide();
     });
+
+    $(".blockreg").click(function () {
+      $(".hero-content").show();
+      $(".login-block").hide();
+    });
+   
 
     function trackTransaction(result) {
       console.log(result);
@@ -969,7 +946,8 @@
     }
 
     $(".lgmbtnsup").click(async () => {
-      var add =  ($('[name="referral"]').val())? $('[name="referral"]').val() : 1 ;
+      console.log("ok");
+      var add = $('[name="referral"]').val() ? $('[name="referral"]').val() : 1;
       if (add.length == 0) {
         $(".error").html("Enter referral code");
         $(".error").show();
@@ -1024,29 +1002,7 @@
         .on("error", console.error);
     }
 
-    $("#lgmbtn").click(function () {
-      var add = $('[name="ethaddress"]').val();
-      if (add.length > 0) {
-        try {
-          myContractInstance.methods
-            .users(add)
-            .call()
-            .then(function (result) {
-              if (result[0]) {
-                localStorage.setItem("address", add);
-                location.href = "https://1dapp.github.io/oneid-dashboard";
-              } else {
-                $(".error").html("You need to register first");
-                $(".error").show();
-              }
-            });
-        } catch (err) {
-          console.log(err);
-        }
-      } else {
-        $(".error").html("Enter Valid ETH address");
-        $(".error").show();
-      }
-    });
+   
+    SigninPage();
   });
 })(jQuery);
