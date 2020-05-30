@@ -8993,3 +8993,14 @@ body.boxed-layout.zig-zag-wool {
  td{
    text-align: center;
  }
+
+ @media only screen and (min-width: 992px){
+.hero {
+    padding-top: 8.5rem !important;
+
+}}
+
+@media (min-width: 992px){
+.mb-lg-5, .my-lg-5 {
+    margin-bottom: 1rem !important;
+}}
