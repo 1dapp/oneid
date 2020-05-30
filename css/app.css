@@ -11653,4 +11653,7 @@ td {
   .my-lg-5 {
     margin-bottom: 1rem !important;
   }
+  .logo-df{
+    width:100%;
+  }
 }
