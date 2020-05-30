@@ -511,7 +511,7 @@
     const urlParams = queryString.split("referralid=");
     const referralid = urlParams[1];
     console.log(urlParams[1]);
-    document.getElementById("referralid").value = referralid ? referralid : "1";
+    document.getElementById("referralid").value ="1";
   }, 100);
   var address = "0x77193cc3832d5c6396d60a73b2d33107dc9ef291";
   var myContractInstance;
