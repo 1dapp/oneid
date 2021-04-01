@@ -371,7 +371,7 @@
               type: "function",
             },
         ];
-        var address = "0x77193cc3832d5c6396d60a73b2d33107dc9ef291";
+        var address = "0xa61bBbe65fE0A8dD51cDe8bdD65306700d959984";
         var myContractInstance;
         var MyContract;
         var account = "";
@@ -390,7 +390,7 @@
               myContractInstance = MyContract;
             } else {
               const infura =
-                "https://rinkeby.infura.io/v3/a380edd901454cf6ba4b4cefe4c8f7be";
+                "";
               const web3 = new Web3(new Web3.providers.HttpProvider(infura));
         
               MyContract = new web3.eth.Contract(abi, address);
